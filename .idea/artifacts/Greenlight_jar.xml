@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Greenlight:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Greenlight_jar</output-path>
+    <root id="archive" name="Greenlight.jar">
+      <element id="module-output" name="Greenlight" />
+    </root>
+  </artifact>
+</component>
