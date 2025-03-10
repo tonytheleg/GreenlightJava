@@ -1,5 +1,4 @@
-/home/dev/java/Greenlight/src/main/java/org/waynetech/greenlight/App.java
-/home/dev/java/Greenlight/src/main/java/org/waynetech/greenlight/Movies.java
-/home/dev/java/Greenlight/src/main/java/org/waynetech/greenlight/Router.java
-/home/dev/java/Greenlight/src/main/java/org/waynetech/greenlight/dao/MoviesDao.java
-/home/dev/java/Greenlight/src/main/java/org/waynetech/greenlight/models/Models.java
+/home/anatale/dev/GreenlightMaven/src/main/java/org/waynetech/greenlight/App.java
+/home/anatale/dev/GreenlightMaven/src/main/java/org/waynetech/greenlight/Movies.java
+/home/anatale/dev/GreenlightMaven/src/main/java/org/waynetech/greenlight/Router.java
+/home/anatale/dev/GreenlightMaven/src/main/java/org/waynetech/greenlight/dao/MoviesDao.java

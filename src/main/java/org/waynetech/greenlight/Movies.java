@@ -5,7 +5,8 @@ import com.sun.net.httpserver.HttpExchange;
 import java.io.IOException;
 import java.io.OutputStream;
 import org.waynetech.greenlight.dao.MoviesDao;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
+
 
 
 public class Movies {
@@ -18,12 +19,11 @@ public class Movies {
     }
     void showMovieHandler(int id, HttpExchange exchange) throws IOException {
         if (id != 0) {
-            ObjectMapper objectMapper = new ObjectMapper();
+            Gson gson = new Gson();
             MoviesDao movie = new MoviesDao(id);
             System.out.println(movie);
             // figure out how to convert class to json, or create write json function to do it
-            String jsonResponse = objectMapper.writeValueAsString(movie);
-            System.out.println("jsonResponse: " + jsonResponse);
+            String jsonResponse = gson.toJson(movie);
             exchange.getResponseHeaders().set("Content-Type", "application/json");
             exchange.sendResponseHeaders(200, jsonResponse.length());
             OutputStream os = exchange.getResponseBody();

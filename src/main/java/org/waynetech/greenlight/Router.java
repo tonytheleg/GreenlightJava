@@ -2,7 +2,6 @@ package org.waynetech.greenlight;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
-import org.waynetech.greenlight.Movies;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -28,7 +27,7 @@ public class Router {
             int id = readIDParam(exchange.getRequestURI());
             Movies movie = new Movies();
 
-           // List movies
+            // List movies
             if (exchange.getRequestURI().getPath().split("/").length == 3) {
                 movie.listMoviesHandler(exchange);
             }
@@ -52,10 +51,10 @@ public class Router {
         int id;
         String[] splitURI =  requestURI.getPath().split("/");
         try {
-           id = Integer.parseInt(splitURI[splitURI.length - 1]);
+            id = Integer.parseInt(splitURI[splitURI.length - 1]);
         }
         catch (NumberFormatException e) {
-           id = 0;
+            id = 0;
         }
         return id;
     }
