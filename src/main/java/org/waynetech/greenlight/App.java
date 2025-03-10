@@ -7,9 +7,6 @@ import com.sun.net.httpserver.HttpServer;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 
-// DYNAMIC URL IDEA
-// https://stackoverflow.com/questions/26815752/create-dynamically-contexts-for-com-sun-net-httpserver-httpserver-java
-
 public class App {
     public static void main(String[] args) throws IOException {
         // Creates an HttpServer instance
